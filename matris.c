@@ -6,6 +6,13 @@ arg[0][0]=>1 , arg[0][1]=>5 , arg[0][2]=> 8 , arg[0][3]=> 7 | arg2[0][0]=>4 , ar
 
 arg[0][0] * arg2[0][0] (1*4=4)
 */
+/* 
+YAPILACAKLAR
+-Değerler okunacak 
+-Okunan değerler bölünüp arraylere koyulacak
+-Arrayler matris algoritmasına eklenecek
+-
+*/
 void fileread(){
 	FILE* openr = fopen("var.txt","r+");
 	if(openr == NULL){
