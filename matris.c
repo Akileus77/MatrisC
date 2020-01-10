@@ -9,7 +9,7 @@ arg[0][0] * arg2[0][0] (1*4=4)
 void fileread(){
 	FILE* openr = fopen("var.txt","r+");
 	if(openr == NULL){
-		printf("Dosya yok veya boþ");
+		printf("Dosya yok veya bos");
 		// return 0;
 	}
 	 char* buf[60]; 
@@ -25,7 +25,7 @@ void arrays(int arg[], int size,int arg2[],int size2){
 
 int main(){
 	printf("basladi \n");
-	// BU ARRAYLER SÝLÝNECEK
+	// BU ARRAYLER SILINECEK
 	int	arg[3][4] = {  
    {9, 1, 2, 3} ,   /*   0 */
    {4, 6, 6, 5} ,   /*  1 */
@@ -36,7 +36,7 @@ int main(){
    {4, 5, 3, 7} ,   /*  1 */
    {8, 7, 6, 3}   /*  2 */
 };
-	// BU ARRAYLER SÝLÝNECEK
+	// BU ARRAYLER SILINECEK
 	printf("Dosya okundu veriler aktarildi \n");
 	int  i,j,a,b,sonuc;	
 	// A
@@ -56,7 +56,7 @@ int main(){
 		printf("%d ",arg2[i][j]);
 		}
 	}
-	// Ýþlem
+	// Islem
 	printf("\n\n********************************* \n");
 	printf("\n 	Islem");
 	for(i=0;i<3;i++){
