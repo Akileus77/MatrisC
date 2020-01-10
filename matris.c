@@ -9,28 +9,35 @@ arg[0][0] * arg2[0][0] (1*4=4)
 void fileread(){
 	FILE* openr = fopen("var.txt","r+");
 	if(openr == NULL){
-		printf("Dosya yok veya bo√æ");
-		return 0;
+		printf("Dosya yok veya bo˛");
+		// return 0;
 	}
-	 char* buf[100]; 
+	 char* buf[60]; 
     while (fscanf(openr,"%*s %*s %s ",buf)==1) 
-        printf("%s\n", buf); 
+        printf("\n%s\n", buf); 
   
-    return 0;  	
+    //return 0;  	 
+    
+}
+void arrays(int arg[], int size,int arg2[],int size2){
+	fileread();
 }
 
 int main(){
 	printf("basladi \n");
-	int arg[3][4] = {  
-   {9, 1, 2, 3} ,   /* 0 */
+	// BU ARRAYLER S›L›NECEK
+	int	arg[3][4] = {  
+   {9, 1, 2, 3} ,   /*   0 */
    {4, 6, 6, 5} ,   /*  1 */
    {3, 9, 6, 1}   /*  2 */
 };
 	int arg2[3][4] = {  
-   {0, 4, 2, 3} ,   /*  0 */
+   {0, 4, 2, 3} ,   /*   0 */
    {4, 5, 3, 7} ,   /*  1 */
-   {8, 7, 6, 3}   /*   2 */
+   {8, 7, 6, 3}   /*  2 */
 };
+	// BU ARRAYLER S›L›NECEK
+	printf("Dosya okundu veriler aktarildi \n");
 	int  i,j,a,b,sonuc;	
 	// A
 	printf("\n Matris A");
@@ -49,7 +56,7 @@ int main(){
 		printf("%d ",arg2[i][j]);
 		}
 	}
-	// √ù√ælem
+	// ›˛lem
 	printf("\n\n********************************* \n");
 	printf("\n 	Islem");
 	for(i=0;i<3;i++){
@@ -69,5 +76,6 @@ int main(){
 		printf("\n arg[%d][%d]= %d",i,j,arg[i][j]);
 		}
 	}*/
+
 return 0;
 }
