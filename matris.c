@@ -9,7 +9,7 @@ arg[0][0] * arg2[0][0] (1*4=4)
 void fileread(){
 	FILE* openr = fopen("var.txt","r+");
 	if(openr == NULL){
-		printf("Dosya yok veya bo˛");
+		printf("Dosya yok veya bo√æ");
 		return 0;
 	}
 	 char* buf[100]; 
@@ -22,14 +22,14 @@ void fileread(){
 int main(){
 	printf("basladi \n");
 	int arg[3][4] = {  
-   {9, 1, 2, 3} ,   /*  initializers for row indexed by 0 */
-   {4, 6, 6, 5} ,   /*  initializers for row indexed by 1 */
-   {3, 9, 6, 1}   /*  initializers for row indexed by 2 */
+   {9, 1, 2, 3} ,   /* 0 */
+   {4, 6, 6, 5} ,   /*  1 */
+   {3, 9, 6, 1}   /*  2 */
 };
 	int arg2[3][4] = {  
-   {0, 4, 2, 3} ,   /*  initializers for row indexed by 0 */
-   {4, 5, 3, 7} ,   /*  initializers for row indexed by 1 */
-   {8, 7, 6, 3}   /*  initializers for row indexed by 2 */
+   {0, 4, 2, 3} ,   /*  0 */
+   {4, 5, 3, 7} ,   /*  1 */
+   {8, 7, 6, 3}   /*   2 */
 };
 	int  i,j,a,b,sonuc;	
 	// A
@@ -49,7 +49,7 @@ int main(){
 		printf("%d ",arg2[i][j]);
 		}
 	}
-	// ›˛lem
+	// √ù√ælem
 	printf("\n\n********************************* \n");
 	printf("\n 	Islem");
 	for(i=0;i<3;i++){
