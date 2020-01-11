@@ -21,24 +21,25 @@ void fileread(){
 	}
 	else{
 			
-	char buf[60]; 
+	char buf[24]; 
  	int arr[24];
-	while (fgets(buf,60, openr)!=NULL){
+	while (fgets(buf,24, openr)!=NULL){
        	printf("\n %s",buf);
+       	arr[24] = buf[24];
  	}
  	
+ 	//	printf("\n %d",arr[24]);
+ 	
+	/* 
 	int *firstHalf = malloc(3 * sizeof(int));
 	if (!firstHalf) {
-	  /* handle error */
 	}
-	
 	int *secondHalf = malloc(3 * sizeof(int));
 	if (!secondHalf) {
-	  /* handle error */
-	}
-
-	memcpy(firstHalf, array, 3 * sizeof(int));
-	memcpy(secondHalf, array + 3, 3 * sizeof(int));
+	}	
+	memcpy(firstHalf, buf, 3 * sizeof(int));
+	memcpy(secondHalf, buf + 3, 3 * sizeof(int));
+ 	*/
 	}	
 		fclose(openr);
 	}
