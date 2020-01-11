@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<stdlib.h>
+
 /*MATRIS ALGORITMASI KARSILKLI IKI DEGERIN CARPIMI
 arg[0][0]=>1 , arg[0][1]=>5 , arg[0][2]=> 8 , arg[0][3]=> 7 | arg2[0][0]=>4 , arg2[0][1]=>7 , arg2[0][2]=> 9 , arg[0][3]=> 8 
 1 7	3 4 | 4 5 1 6 = 1+4 , 7+5 , 3+1 , 4+6
@@ -21,28 +21,24 @@ void fileread(){
 	}
 	else{
 			
-	char buf[24]; 
- 	int arr[24];
+	int buf[24]; 
+ 	int arr[24] = { 0 };
+ 	int c,k;
+ 	int var[3][4];
 	while (fgets(buf,24, openr)!=NULL){
        	printf("\n %s",buf);
-       	arr[24] = buf[24];
- 	}
- 	
- 	//	printf("\n %d",arr[24]);
- 	
-	/* 
-	int *firstHalf = malloc(3 * sizeof(int));
-	if (!firstHalf) {
-	}
-	int *secondHalf = malloc(3 * sizeof(int));
-	if (!secondHalf) {
-	}	
-	memcpy(firstHalf, buf, 3 * sizeof(int));
-	memcpy(secondHalf, buf + 3, 3 * sizeof(int));
- 	*/
+       	for(c=0;c<3;c++){	
+		for(k=0;k<4;k++)
+		{		
+		var[c][k] = printf("\n %s",buf);
+	   //bu kýsým hatalý
+		}			 
+		}
+
+	 }
 	}	
 		fclose(openr);
-	}
+}
 
 
 int main(){
