@@ -26,9 +26,6 @@ void fileread(){
 	}
 	
 }
-void arrays(int arg[], int size,int arg2[],int size2){
-	fileread();
-}
 
 int main(){
 	printf("basladi \n");
