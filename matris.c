@@ -9,8 +9,8 @@ arg[0][0] * arg2[0][0] (1*4=4)
 */
 /* 
 YAPILACAKLAR
--Okunan değerler bölünüp arraylere koyulacak
--Arrayler matris algoritmasına eklenecek
+-Okunan deÄŸerler bÃ¶lÃ¼nÃ¼p arraylere koyulacak
+-Arrayler matris algoritmasÄ±na eklenecek
 -
 */
 void fileread(){
@@ -27,19 +27,19 @@ void fileread(){
  	int var[3][4];
 	while (fgets(buf,24, openr)!=NULL){
        	printf("\n %s",buf);
-       	for(c=0;c<3;c++){	
-		for(k=0;k<4;k++)
-		{		
-		var[c][k] = printf("\n %s",buf);
-	   //bu k�s�m hatal�
-		}			 
-		}
-
 	 }
 	}	
 		fclose(openr);
 }
-
+/* BUNU SIMDILIK DAHIL ETME
+for(c=0;c<3;c++){	
+		for(k=0;k<4;k++)
+		{		
+		var[c][k] = printf("\n %s",buf);
+	   //bu kýsým hatalý
+		}			 
+		}
+*/
 
 int main(){
 	printf("basladi \n");
