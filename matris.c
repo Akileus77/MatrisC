@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 /*MATRIS ALGORITMASI KARSILKLI IKI DEGERIN CARPIMI
 arg[0][0]=>1 , arg[0][1]=>5 , arg[0][2]=> 8 , arg[0][3]=> 7 | arg2[0][0]=>4 , arg2[0][1]=>7 , arg2[0][2]=> 9 , arg[0][3]=> 8 
 1 7	3 4 | 4 5 1 6 = 1+4 , 7+5 , 3+1 , 4+6
@@ -17,14 +18,13 @@ void fileread(){
 	FILE* openr = fopen("var.txt","r+");
 	if(openr == NULL){
 		printf("Dosya yok veya bos");
-		// return 0;
 	}
-	 char* buf[60]; 
+	else{
+	char* buf[60]; 
     while (fscanf(openr,"%*s %*s %s ",buf)==1) 
         printf("\n%s\n", buf); 
-  
-    //return 0;  	 
-    
+	}
+	
 }
 void arrays(int arg[], int size,int arg2[],int size2){
 	fileread();
@@ -75,6 +75,8 @@ int main(){
 		printf("\n %d*%d = %i",arg[i][j],arg2[i][j],sonuc);
 		}
 	}
+	
+	fileread();
 	/* arrays
 	for(i=0;i<3;i++){
 		printf("\n");
