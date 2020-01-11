@@ -9,23 +9,40 @@ arg[0][0] * arg2[0][0] (1*4=4)
 */
 /* 
 YAPILACAKLAR
--Değerler okunacak 
 -Okunan değerler bölünüp arraylere koyulacak
 -Arrayler matris algoritmasına eklenecek
 -
 */
 void fileread(){
-	FILE* openr = fopen("var.txt","r+");
+	FILE* openr = fopen("var.txt","r");
+	
 	if(openr == NULL){
 		printf("Dosya yok veya bos");
 	}
 	else{
-	char* buf[60]; 
-    while (fscanf(openr,"%*s %*s %s ",buf)==1) 
-        printf("\n%s\n", buf); 
+			
+	char buf[60]; 
+ 	int arr[24];
+	while (fgets(buf,60, openr)!=NULL){
+       	printf("\n %s",buf);
+ 	}
+ 	
+	int *firstHalf = malloc(3 * sizeof(int));
+	if (!firstHalf) {
+	  /* handle error */
 	}
 	
-}
+	int *secondHalf = malloc(3 * sizeof(int));
+	if (!secondHalf) {
+	  /* handle error */
+	}
+
+	memcpy(firstHalf, array, 3 * sizeof(int));
+	memcpy(secondHalf, array + 3, 3 * sizeof(int));
+	}	
+		fclose(openr);
+	}
+
 
 int main(){
 	printf("basladi \n");
