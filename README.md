@@ -1,1 +1,1 @@
-# MatrisCwMPI
+# MatrisC
