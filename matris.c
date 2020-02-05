@@ -9,10 +9,11 @@ arg[0][0] * arg2[0][0] (1*4=4)
 */
 /* 
 YAPILACAKLAR
--Okunan değerler bölünüp arraylere koyulacak
--Arrayler matris algoritmasına eklenecek
+-Okunan deÄŸerler bÃ¶lÃ¼nÃ¼p arraylere koyulacak
+-Arrayler matris algoritmasÄ±na eklenecek
 -
 */
+/*
 void fileread(){
 	FILE* openr = fopen("var.txt","r");
 	
@@ -34,7 +35,7 @@ void fileread(){
 		for(k=0;k<4;k++)
 		{		
 	  	
-	   //bu k�s�m hatal�
+	   //bu kýsým hatalý
 	   	printf("\n var[%d][%d] = %d",c,k,var[c][k]);
 		}			 
 		}
@@ -43,7 +44,7 @@ void fileread(){
 	}	
 		fclose(openr);
 }	
-
+*/
 
 int main(){
 	printf("basladi \n");
@@ -91,8 +92,9 @@ int main(){
 		}
 	}
 	
-	fileread();
+	//fileread();
 	/* arrays
+	
 	for(i=0;i<3;i++){
 		printf("\n");
 		for(j=0;j<=3; j++){
